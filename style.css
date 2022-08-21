@@ -1,0 +1,198 @@
+/* || GENERAL STYLES */
+
+:root {
+    --height100: 100px;
+    --height200: 200px;
+    --height700: 700px;
+    --bottom-margin: 20px;
+}
+
+html {
+    box-sizing: border-box;
+    font-family: 'Helvetica neue', Arial, sans-serif;
+    font-size: 10px;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #fff;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+ul, li {
+    list-style: none;
+}
+
+p {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+/* || SITEWIDE STYLES */
+
+/* 
+    ----------------------------------------------------------------
+    Layout and Responsive styles
+    -----------------------------------------------------------------   
+*/
+
+.container {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.container--height100 {
+    height: var(--height100);
+}
+
+.container--height700 {
+    height: var(--height700);
+}
+
+.responsive {
+    margin: 0;
+    padding-right: 200px;
+    padding-left: 200px;
+}
+
+
+/* 
+    ----------------------------------------------------------------
+    Header styles
+    -----------------------------------------------------------------   
+*/
+
+.header {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.header--color {
+    background-color: rgb(21, 255, 146);
+}
+
+.header__title {
+    color: #000;
+    text-align: center;
+    font-size: 3em;
+}
+
+/* 
+    ----------------------------------------------------------------
+    Navigation styles
+    -----------------------------------------------------------------        
+*/
+
+.menu {
+    margin: 0;
+    padding: 0;
+}
+
+.menu--color {
+    background-color: rgb(128, 130, 211);;
+}
+
+.menu-list__link {
+    color: rgb(0, 2, 75);
+    font-size: 2em;
+    text-align: center;
+}
+
+.menu-list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.menu-list__item {
+    height: 100px;
+    padding-top: 40px;
+    padding-bottom: 25px;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+
+.menu-list__item:hover {
+    border-bottom: 3px solid rgb(0, 2, 75);
+}
+
+/*
+.menu-list__item:hover .menu-list__link {
+    color: #fff;
+}*/
+
+/* 
+    ----------------------------------------------------------------
+    Section styles
+    -----------------------------------------------------------------        
+*/
+
+.products {
+    margin: 0;
+    padding-top: 80px;
+    padding-left: 50px;
+    padding-right: 50px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 500px 500px;
+}
+
+.products--color {
+    background-color: rgb(255, 255, 255);
+}
+
+.filter-products {
+    border-right: 3px solid black;
+}
+
+.filter-products__label {
+    display: block;
+    margin-bottom: var(--bottom-margin);
+    font-size: 2em;
+}
+
+.filter-products__select {
+    display: block;
+    margin-bottom: var(--bottom-margin);
+    width: 200px;
+    padding: 5px;
+}
+
+.filter-products__input {
+    display: block;
+    margin-bottom: var(--bottom-margin);
+    width: 200px;
+    padding: 5px;
+    background-color: #000;
+    color: #fff;
+
+}
+
+.filter-products__btn {
+    display: block;
+    width: 200px;
+    padding: 5px;
+    background-color: black;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.display-products {
+    display: grid;
+}
