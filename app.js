@@ -16,7 +16,7 @@ function initialise(products) {
     
     // get the UI elements
     const category = document.querySelector('#category');
-    const searchTerm = document.querySelector('#searchTerm');
+    const searchTerm = document.querySelector('#search-term');
     const filterBtn = document.querySelector('#filter-products');
     const displayMain = document.querySelector('#display-products');
 
