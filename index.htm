@@ -32,26 +32,35 @@
     <div class="container container--height700 products--color">
         <div class="responsive">
             <section class="products">
-                <div class="filter-products">
+                <aside>
+                    <div class="filter-products">
 
-                    <label for="vegetables-select" class="filter-products__label">Choose a category: </label>
-                    <select name="vegetables-options" id="" class="filter-products__select">
-                        <option value="">All</option>
-                        <option value="vegetables">Vegetables</option>
-                        <option value="meat">Meat</option>
-                        <option value="soup">Soup</option>
-                    </select>
+                        <div>
+                            <label for="products-select" class="filter-products__label">Choose a category: </label>
+                            <select name="products-options" id="select-products" class="filter-products__select">
+                                <option value="">All</option>
+                                <option value="vegetables">Vegetables</option>
+                                <option value="meat">Meat</option>
+                                <option value="soup">Soup</option>
+                            </select>
+                        </div>
 
-                    <input type="search" placeholder="e.g beans" class="filter-products__input">
+                        <div>
+                            <input type="search" placeholder="e.g beans" class="filter-products__input" id="search-products">
+                        </div>
 
-                    <button class="filter-products__btn">filter results</button>
+                        <div>
+                            <button class="filter-products__btn" id="filter-products">filter results</button>
+                        </div>
 
-                </div>
+                    </div>
+                </aside>
+                
+                <main>
+                    <div class="display-products" id="display-products">
 
-                <div class="display-products">
-
-                </div>
-
+                    </div>
+                </main>
             </section>
         </div>
     </div>
